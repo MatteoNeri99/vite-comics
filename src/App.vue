@@ -1,9 +1,9 @@
-<script setup>
+<script>
 import HeaderApp from './components/HeaderApp.vue'
 import MainApp from './components/MainApp.vue'
 import FooterApp from './components/FooterApp.vue'
 
-createApp({
+export default {
     data() {
       return {
         
@@ -14,7 +14,7 @@ createApp({
       MainApp,
       FooterApp
     }
-  }).mount('#app')
+  }
 </script>
 
 <template>
@@ -25,6 +25,10 @@ createApp({
 
 </template>
 
-<style lang="scss" scoped>
-@use './styles/variabili'
+<style lang="scss">
+
+h1 {
+  color: blue;
+}
+
 </style>

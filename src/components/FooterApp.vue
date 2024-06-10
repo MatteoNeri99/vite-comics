@@ -1,11 +1,11 @@
-<script setup>
-createApp({
+<script >
+export default{
     data() {
       return {
         
       }
     }
-  }).mount('#app')
+  }
 
 </script>
 
@@ -15,5 +15,9 @@ createApp({
 </template>
 
 <style lang="scss" scoped>
+
+h1{
+  color: red;
+}
 
 </style>

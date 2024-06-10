@@ -1,11 +1,11 @@
-<script setup>
-createApp({
+<script >
+export default{
     data() {
       return {
         
       }
     }
-  }).mount('#app')
+  }
 
 </script>
 

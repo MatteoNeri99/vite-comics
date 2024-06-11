@@ -113,7 +113,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 150px;
+  height: 143px;
 
   ul{
     display: flex;
@@ -124,15 +124,15 @@ header{
       
 
       a{
-        text-decoration: none;
         color: black;
         text-transform: uppercase;
         font-weight: bold;
-        padding: 3rem 0;
+        padding: calc(75px - 1rem) 0;
+        font-size: 1rem;
 
         &.active{
           color:#0282f9 ;
-          border-bottom:2px #0282f9 solid;
+          border-bottom:5px #0282f9 solid;
 
         }
       }

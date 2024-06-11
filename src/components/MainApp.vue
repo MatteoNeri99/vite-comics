@@ -1,9 +1,14 @@
 <script >
+
+import AsideMainApp from './AsideMainApp.vue'
 export default{
     data() {
       return {
         
       }
+    },
+    components:{
+      AsideMainApp,
     }
   }
 
@@ -14,6 +19,8 @@ export default{
     <main>
       <p>--> Content goes here <--</p>
     </main>
+
+    <AsideMainApp/>
 </template>
 
 <style lang="scss" scoped>

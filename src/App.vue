@@ -28,8 +28,18 @@ export default {
 
 <style lang="scss">
 
-h1 {
-  color: blue;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+
+a{
+  text-decoration: none;
 }
 
 </style>

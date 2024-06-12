@@ -1,6 +1,7 @@
 <script >
 
 import AsideMainApp from './AsideMainApp.vue'
+import MainJumbotron from './MainJumbotron.vue'
 export default{
     data() {
       return {
@@ -9,6 +10,7 @@ export default{
     },
     components:{
       AsideMainApp,
+      MainJumbotron
     }
   }
 
@@ -17,17 +19,21 @@ export default{
 <template>
 
     <main>
-      <p>--> Content goes here <--</p>
+
+      <MainJumbotron/>
+      <AsideMainApp/>
+     
     </main>
 
-    <AsideMainApp/>
+   
 </template>
 
 <style lang="scss" scoped>
 main{
   background-color: black;
-  padding: 3rem;
   color: white;
+
+
   p{
     margin-left: 10rem;
     font-size: 2rem;

@@ -176,6 +176,39 @@ export default{
             title:'DC Power Visa',
             id:5
           },
+        ],
+
+        footerLinks:[
+            {
+                img:'./src/assets/img/footer-facebook.png',
+                id:1
+
+
+            },
+            {
+                img:'./src/assets/img/footer-twitter.png',
+                id:2
+
+
+            },
+            {
+                img:'./src/assets/img/footer-youtube.png',
+                id:3
+
+
+            },
+            {
+                img:'./src/assets/img/footer-pinterest.png',
+                id:4
+
+
+            },
+            {
+                img:'./src/assets/img/footer-periscope.png',
+                id:5
+
+
+            }
         ]
 
 
@@ -190,52 +223,82 @@ export default{
 <template>
 
   <footer>
-    <section class="footer-link">
+    <div class="container">
+      <section class="footer-link">
 
-      <div>
+        <div>
 
-        <h3>Dc comics</h3>
+          <h3>Dc comics</h3>
 
-        <ul>
-          <li v-for="element in comicsLinks" :key="element.id">
-            <a href="">{{ element.title }}</a>
-          </li>
-        </ul>
+          <ul>
+            <li v-for="element in comicsLinks" :key="element.id">
+              <a href="">{{ element.title }}</a>
+            </li>
+          </ul>
 
-        <h3>shop</h3>
+          <h3>shop</h3>
 
-        <ul>
-          <li  v-for="element in shopLinks" :key="element.id">
-            <a href=""> {{ element.title }} </a>
-          </li>
-        </ul>
+          <ul>
+            <li  v-for="element in shopLinks" :key="element.id">
+              <a href=""> {{ element.title }} </a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div>
+          <h3>Dc</h3>
+
+          <ul>
+            <li  v-for="element in dcLinks" :key="element.id">
+              <a href=""> {{ element.title }} </a>
+            </li>
+          </ul>
+
+        </div>
+        <div>
+          <h3>sites</h3>
+
+          <ul>
+            <li  v-for="element in sitesLinks" :key="element.id">
+              <a href=""> {{ element.title }} </a>
+            </li>
+          </ul>
 
       </div>
 
-      <div>
-        <h3>Dc</h3>
-
-        <ul>
-          <li  v-for="element in dcLinks" :key="element.id">
-            <a href=""> {{ element.title }} </a>
-          </li>
-        </ul>
-
-      </div>
-      <div>
-        <h3>sites</h3>
-
-        <ul>
-          <li  v-for="element in sitesLinks" :key="element.id">
-            <a href=""> {{ element.title }} </a>
-          </li>
-        </ul>
-
-      </div>
+     
 
     </section>
 
-    <img src="../assets/img/dc-logo-bg.png" alt="">
+    <div class="dc-logo-footer">
+      
+      <img src="../assets/img/dc-logo-bg.png" alt="">
+
+    </div>
+
+    </div>
+
+
+    
+
+    <section class="social">
+      <button>sign-up now!</button>
+
+      <div>
+
+        <p>follow us</p>
+
+        <div  v-for="element in footerLinks" key="element.id">
+
+          <img :src="element.img" alt="">
+
+        </div>
+        
+      </div>
+    </section>
+
+
   </footer>
 
   
@@ -245,26 +308,51 @@ export default{
 
 <style lang="scss" scoped>
 
-footer{
+
+.container{
   background-image: url(../assets/img/footer-bg.jpg);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  height: 500px;
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   color: white;
-  text-transform:uppercase ;
   font-weight: bold;
 
-  section{
+  .dc-logo-footer{
+      
+      position: relative;
+
+      img{
+        position: Absolute;
+        top:-50px;
+        clip: Rect(50px 565px 550px 0px);
+      }
+    }
+
+  section.footer-link{
+    width: 50%;
     display: flex;
-    padding: 3rem ;
+    height: 400px;
+    padding: 3rem;
+    margin-left: 10rem;
+    
 
     h3{
       margin-bottom: 1rem;
+      text-transform:uppercase ;
+      
+      
     }
 
     ul{
       list-style-type: none;
       margin-right: 2rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
+     
+      
+
+
 
       li{
         margin-bottom: .4rem;
@@ -279,7 +367,39 @@ footer{
       }
     }
   }
+
 }
+section.social{
+    background-color:#303030;
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    button{
+      background-color: transparent;
+      border: 1px solid #0282f9;
+      color: white;
+      text-transform: uppercase;
+      padding: .5rem .7rem;
+    }
+
+    div{
+      display: flex;
+
+      img{
+        margin-left: 1rem;
+      }
+    }
+    p{
+      text-transform: uppercase;
+      color: #0282f9;
+      font-weight: bold;
+      align-self: center;
+    }
+  }
 
 
 

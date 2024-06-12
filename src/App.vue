@@ -19,11 +19,17 @@ export default {
 
 <template>
 
+  <body>
 
-  <HeaderApp/>
-  <MainApp/>
-  <FooterApp/>
+    <HeaderApp/>
+    <MainApp/>
+    <FooterApp/>
 
+    
+  </body>
+
+
+  
 </template>
 
 <style lang="scss">
@@ -41,5 +47,7 @@ export default {
 a{
   text-decoration: none;
 }
+
+
 
 </style>

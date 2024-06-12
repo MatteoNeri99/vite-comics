@@ -37,9 +37,14 @@ section{
         height: 50px;
         padding: 2rem;
         margin-left: 10rem;
-        background-color:  #0282f9 solid;
         position: absolute;
-        top:525px
+        top:356px;
+
+        h2{
+            background-color:  #0282f9;
+            padding: 1rem 1.6rem;
+            text-transform: uppercase;
+        }
     }
 }
 </style>

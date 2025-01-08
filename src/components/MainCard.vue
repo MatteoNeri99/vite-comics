@@ -42,10 +42,17 @@ article{
     margin-right: 2rem;
     margin-bottom: 3rem;
     
+    
     img{
         width: 100%;
         height: 200px;
         object-fit:cover
+    }
+
+    p{
+      color: white;
+      text-align: center;
+      margin-top: .7rem;
     }
 }
 
